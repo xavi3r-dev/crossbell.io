@@ -16,6 +16,7 @@ import xLogImg from "./x-log.png";
 import xSyncImg from "./x-sync.png";
 import xFeedImg from "./x-feed.png";
 import tampermonkeyImg from "./tampermonkey.svg";
+import forRealImg from "./4real.svg";
 import obsidianImg from "./obsidian.svg";
 import mastodon from "./mastodon.svg";
 import { AutoShow } from "@/components/pages/landing-page/components/auto-show";
@@ -155,6 +156,17 @@ function Mobile() {
 				<Image src={obsidianImg} width={22} height={22} alt="Obsidian" />
 				Obsidian Plugin
 			</SmallCard>
+
+			<SmallCard tooltip="Coming Soon">
+				<Image
+					src={forRealImg}
+					width={22}
+					height={22}
+					alt="4Real"
+					style={{ borderRadius: "30%" }}
+				/>
+				4Real
+			</SmallCard>
 		</div>
 	);
 }
@@ -245,11 +257,25 @@ function PC() {
 						<span className="text-[22px]">Tampermonkey</span>
 					</SmallCard>
 				</div>
+				<div className="flex flex-col gap-[1.6vw]">
+					<SmallCard className="!rounded-[24px]" tooltip="Coming Soon">
+						<h5 className="m-0 flex items-center gap-[8px]">
+							<Image
+								src={forRealImg}
+								width={60}
+								height={60}
+								alt="4Real"
+								style={{ borderRadius: "30%" }}
+							/>
+							<span className="text-[22px]">4Real</span>
+						</h5>
+					</SmallCard>
 
-				<SmallCard className="!h-[141px] !rounded-[24px]" noHoverEffect={true}>
-					<MoreIcon className="text-[#fff] text-[32px]" />
-					<span className="text-[22px] font-medium">More Coming Soon</span>
-				</SmallCard>
+					<SmallCard className="!rounded-[24px]" noHoverEffect={true}>
+						<MoreIcon className="text-[#fff] text-[32px]" />
+						<span className="text-[22px] font-medium">More Coming Soon</span>
+					</SmallCard>
+				</div>
 			</div>
 		</div>
 	);
